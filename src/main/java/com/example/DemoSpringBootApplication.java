@@ -23,4 +23,9 @@ public class DemoSpringBootApplication {
         return "Hello Guest";
     }
 
+    @GetMapping("/Hi")
+    public String stranger(){
+        return "Hi stranger";
+    }
+
 }
