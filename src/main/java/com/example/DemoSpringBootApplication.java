@@ -17,5 +17,10 @@ public class DemoSpringBootApplication {
     public String sayHello() {
         return "Hello from Spring Boot!";
     }
-    
+
+    @GetMapping("/guest")
+    public String guest(){
+        return "Hello Guest";
+    }
+
 }
