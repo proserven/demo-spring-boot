@@ -7,7 +7,7 @@ node {
     }
     stage('Build demoservice project'){
         //use sh in case is a linux env
-        bat "C:\\Maven\\bin\\mvn clean install -DskipTests=true"
+        bat "C:\\Maven\\bin\\mvn clean install -Maven.test.skip=true"
         //jar file will be generated
     }
     stage('Build Docker image'){
